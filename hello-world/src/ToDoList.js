@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 function ToDoList() {
@@ -22,17 +21,25 @@ const handleClick= (e)=>{
   return (
     <div className="App">
     
-    <label> TO DO LIST</label>
-
-   
-    {
-    todoList.map((index)=>( index))
-    }
-      
-  <br/>
     <label> Input To do Item </label>
     <input type="text" onChange={handleChange} name="addtodo"  />
     <button onClick={handleClick}> Add Item</button>
+<br/>
+    <span style={{"font-weight":"bold"}}> TO DO LIST</span>
+<section style={{"display":"flex", "flex-direction":"column"}}>
+<span style={{"font-weight":"bold"}}>Task Name</span>
+    {      
+    todoList.map((index)=>( 
+     <div>
+     
+      <h4>{index}</h4>     
+      </div>      
+      ))
+    }
+    </section>
+      
+  <br/>
+ 
     </div>
   );
 }
