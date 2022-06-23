@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 function HelloWorld() {
     
+  return (
     <div className="App">
- 
-    </div>
+    </div>);
 }
 
 export default HelloWorld;
