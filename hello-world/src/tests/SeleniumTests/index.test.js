@@ -25,11 +25,11 @@ describe("selenium tests",  () => {
   //Test Add Input functionality
   test("renders TODO List page!", async () => {
       await driver.findElement(By.name("addtodo")).sendKeys("Automated Testing Todo", Key.RETURN);
-      await driver.sleep(2000);
+ 
       await driver.findElement(By.name("submit")).click();
-      await driver.sleep(2000);
+  
       const elementdiv=   await driver.findElement(By.name("todolist")).getText();
-      await driver.sleep(2000);
+   
       expect(elementdiv).toEqual(elementdiv); 
 
   })
