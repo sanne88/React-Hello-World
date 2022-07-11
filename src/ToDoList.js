@@ -22,6 +22,7 @@ const handleClick= (e)=>{
     <div className="App">
     
     <label> Input To do Item </label>
+      <label>Circle CI Demo </label>
     <input type="text" onChange={handleChange} name="addtodo"  />
     <button onClick={handleClick} name="submit"> Add Item</button>
 <br/>
